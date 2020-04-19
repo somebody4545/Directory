@@ -1,0 +1,39 @@
+.jumbotron {
+    display: block;
+}
+.title {
+    color: white;
+    background-color: orange;
+    font-size: xx-large;
+    text-align: center;
+}
+.img {
+    max-width: 25%;
+}
+.center {
+    text-align: center;
+}
+.yeet {
+    display: grid;
+    grid-template-rows: 20% 80%;
+    padding: 25px 5px;
+}
+.middle {
+    margin: 0;
+}
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 3rem;
+}
+#degreesymb{
+    font-size: 2rem;
+}
+.degrees {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin-left: 0.5rem;
+    text-align: center;
+}
