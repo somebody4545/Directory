@@ -1,18 +1,16 @@
 $(document).ready(function(){
 
-    // Get Location
-    navigator.geolocation.getCurrentPosition(success, error);
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(success);
+      } else {
+        console.log = "Geolocation is not supported by this browser.";
+      }
 
     function success(pos) {
         var lat = pos.coords.latitude
         var long = pos.coords.longitude
         weather(lat, long);
     }
-
-    function error() {
-        console.log('Location not found')
-    }
-
 
     function weather(lat, long) {
         var URL = `https://fcc-weather-api.glitch.me/api/current?lat=${lat}&lon=${long}`;
